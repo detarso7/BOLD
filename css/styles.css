@@ -127,24 +127,24 @@ a{
     justify-content: space-between; 
 }
 
-@media screen and (max-width: 425px) {
-  .container-about{
-    flex-direction: column;
-    padding: 0 20px 0 20px;
-}
-}
+    @media screen and (max-width: 425px) {
+      .container-about{
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+    }
+    }
 
 .about{
     width: 100%;
     max-width: 520px;
 }
 
-@media screen and (max-width: 425px) {
-  .about{
-    width: 100%;
-    margin-bottom: 20px;
-}
-}
+    @media screen and (max-width: 425px) {
+      .about{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    }
 
 .about h1{
     font-size: 20px;
@@ -180,16 +180,16 @@ a{
       border: 1px solid #707070;
   }
 
-  @media screen and (max-width: 425px) {
-    .form{
-      width: 100%;
-      max-width: 420px;
-  }
-    .form input{
-      width: 100%;
-      max-width: 420px;
-  }
-  }
+      @media screen and (max-width: 425px) {
+        .form{
+          width: 100%;
+          max-width: 420px;
+      }
+        .form input{
+          width: 100%;
+          max-width: 420px;
+      }
+      }
 
 .check{
     display: flex;
@@ -257,17 +257,17 @@ a{
 
 }
 
-@media screen and (max-width: 425px) {
-  .container-product h1::after {
-    width: 90px;
-    height: 2px;  
-  }
-  
-  .container-product h1::before {
-    width: 90px;
-    height: 2px;
-  }
-}
+    @media screen and (max-width: 425px) {
+      .container-product h1::after {
+        width: 90px;
+        height: 2px;  
+      }
+      
+      .container-product h1::before {
+        width: 90px;
+        height: 2px;
+      }
+    }
 
 .container-card{
   margin-top: 40px;
@@ -430,16 +430,6 @@ a{
   border: 1px solid #707070;
 }
 
-@media screen and (max-width: 425px) {
-  .news-form{
-    flex-direction: column;
-  }
-  #news input{
-    width: 95%;
-    height: 30px;
-  }
-}
-
 #news input:focus-within{
 border: none;
 }
@@ -455,6 +445,20 @@ border: none;
   display: none;
   color: #862020;
   font-size: 12px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .news-form{
+      flex-direction: column;
+    }
+    #news input{
+      width: 95%;
+      height: 30px;
+    }
+    #news label{
+      margin-bottom: 1px;
+      margin-top: 20px;
+    }
   }
 
 .footer {
