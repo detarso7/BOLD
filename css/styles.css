@@ -129,25 +129,25 @@ a{
     }
 
 .form{
-    width: 100%;
-    max-width: 320px;
-}
+      width: 100%;
+      max-width: 320px;
+  }
 
 .form label{
-    font-size: 12px;
-    color: #888888;
-    margin-bottom: 5px;
-
-}
-
+      font-size: 12px;
+      color: #888888;
+      margin-bottom: 5px;
+  
+  }
+  
 .form input{
-    width: 100%;
-    max-width: 320px;
-    height: 30px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #707070;
-}
+      width: 100%;
+      max-width: 320px;
+      height: 30px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #707070;
+  }
 
 .check{
     display: flex;
@@ -283,6 +283,7 @@ margin-bottom: 5px;
   font-size: 14px;
   color: #888888;
   margin: 40px 0;
+  text-align: center;
 }
 
 .form-center{
@@ -292,7 +293,7 @@ margin-bottom: 5px;
 }
 
 .form-center input[type="button"]{
-  color: #888888;
+  color: #222020;
   font-size: 16px;
   border-style: none;
   width: 300px;
@@ -316,10 +317,6 @@ margin-bottom: 5px;
   justify-content: center;
 }
 
-.news-form label{
-  display: block;
-}
-
 #news{
   margin-left: 20px;
 }
@@ -327,13 +324,28 @@ margin-bottom: 5px;
 #news input{
   width: 350px;
   height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-style: none;
+  border: 1px solid #707070;
+}
+
+#news input:focus-within{
+border: none;
 }
 
 #news label{
   margin-bottom: 5px;
   color: #888888;
   font-size: 12px;
+  display: block;
 }
+
+#news span{
+  display: none;
+  color: #862020;
+  font-size: 12px;
+  }
 
 .footer {
   position: relative;

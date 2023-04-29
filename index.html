@@ -48,7 +48,7 @@
                     <label for="">E-mail</label>
                     <input type="email" name="email">
                     <label for="">CPF</label>
-                    <input type="number">
+                    <input type="text">
                     <div class="check">
                         <input type="radio" name="Masculino" id="check">
                         <label for="">Masculino</label>
@@ -89,19 +89,23 @@
         <div class="container-product">
             <h1>Sua seleção especial</h1>
             <p id="news-p">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-                <form action="" class="form-center">
+
+                <form id="form" class="form-center">
                     <div class="news-form">
                         <div id="news">
-                            <label for="">Nome do amigo</label>
-                            <input type="text">
+                            <label for="Nome">Nome do amigo*</label>
+                            <input type="text" class="requered" oninput="nameValidate()">
+                            <span class="span-requared">Nome deve ter no mínimo 3 caracteres</span>
                         </div>
                         <div id="news">
-                            <label for="">E-mail</label>
-                            <input type="email" name="" id="">
+                            <label for="email">E-mail*</label>
+                            <input type="email" name="email" class="requered" oninput="emailValidate()">
+                            <span class="span-requared">Digite um email válido</span>
                         </div>
                     </div>
-                    <input type="button" value="Enviar agora">
+                    <input type="button" value="Enviar agora" id="btn" disabled>
                 </form>
+
             </div>
         </div>             
     </section>
@@ -113,6 +117,8 @@
                 <p>2019</p>
             </div>
     </footer>
-    <script src="js/products.js"></script>
 </body>
+<script src="js/products.js"></script>
+<script src="js/moreProducts.js"></script>
+<script src="js/validation.js"></script>
 </html>
