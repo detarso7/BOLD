@@ -13,9 +13,14 @@ async function getMoreProducts () {
 	data.products.map((pro) =>{
 
 		
+		// Cria uma div que representará o card do produto
 		const div = document.createElement("div")
+		div.classList.add("contentCard")
+		const divImg = document.createElement("div")
+		divImg.classList.add("imgCard")
+		const divCard = document.createElement("div")
 
-		
+		// Cria os elementos
 		const img = document.createElement("img")
 		const productName = document.createElement("h6")
 		const text = document.createElement("p")
@@ -25,7 +30,7 @@ async function getMoreProducts () {
 		const buttonProduct = document.createElement("a")
 		const br = document.createElement("br")
 
-		
+		// Inseri as informações da requisição
 		img.setAttribute("src", `${pro.image}`)
 		productName.innerText = pro.name
 		text.innerText = pro.description
@@ -34,8 +39,8 @@ async function getMoreProducts () {
 		installmentsoldPrice.innerText = `Ou ${pro.installments.count}x de: R$ ${pro.installments.value}0`
 		buttonProduct.innerText = "Comprar"
 
-		
-		div.appendChild(img)
+		// Monta os elementos com as informações setadas
+		divImg.appendChild(img)
 		div.appendChild(productName)
 		div.appendChild(text)
 		div.appendChild(oldPrice)
@@ -44,8 +49,11 @@ async function getMoreProducts () {
 		div.appendChild(br)
 		div.appendChild(buttonProduct)
 
-		
-		productCard2.appendChild(div)
+		divCard.appendChild(divImg)
+		divCard.appendChild(div)
+
+		// Inseri a dive montada no elemento selecionado anteriormente
+		productCard2.appendChild(divCard)
 
 	})
 }

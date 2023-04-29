@@ -79,9 +79,13 @@ a{
   }
 
   .list{
-    display: flex;
+    display: flex;    
   }
 
+  .list li{
+    margin-left: 40px;
+  }
+  
   .list a{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 6px #00000029;
@@ -90,8 +94,20 @@ a{
     opacity: 1;
     padding: 10px 30px;
     color: #888888;
-    margin-left: 40px;
     font-size: 14px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .list {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .list li{
+      margin-bottom: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
   }
 
 .section{
@@ -111,9 +127,23 @@ a{
     justify-content: space-between; 
 }
 
+@media screen and (max-width: 425px) {
+  .container-about{
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+}
+}
+
 .about{
     width: 100%;
     max-width: 520px;
+}
+
+@media screen and (max-width: 425px) {
+  .about{
+    width: 100%;
+    margin-bottom: 20px;
+}
 }
 
 .about h1{
@@ -148,6 +178,17 @@ a{
       margin-top: 5px;
       margin-bottom: 15px;
       border: 1px solid #707070;
+  }
+
+  @media screen and (max-width: 425px) {
+    .form{
+      width: 100%;
+      max-width: 420px;
+  }
+    .form input{
+      width: 100%;
+      max-width: 420px;
+  }
   }
 
 .check{
@@ -191,6 +232,7 @@ a{
 .container-product h1{
     font-size: 18px;
     color: #888888;
+    text-align: center;
 }
 
 .container-product h1::after {
@@ -215,6 +257,18 @@ a{
 
 }
 
+@media screen and (max-width: 425px) {
+  .container-product h1::after {
+    width: 90px;
+    height: 2px;  
+  }
+  
+  .container-product h1::before {
+    width: 90px;
+    height: 2px;
+  }
+}
+
 .container-card{
   margin-top: 40px;
 }
@@ -230,51 +284,91 @@ a{
 .card div{
   width: 22%;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.card div a{
-  padding: 5px 60px;
-  margin-top: 10px;
-  border: 1px solid #707070;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.5s;
+.imgCard{
+  width: 100%;
+  min-width: 100%;
 }
 
-.card div a:hover{
-  background-color: #707070;
-  color: #fff;
-  
-}
-
-.card img{
+.imgCard img{
   width: 100%;
   height: 200px;
 }
 
-.card h6{
+.contentCard{
+  width: 100%;
+  min-width: 90%;
+}
+
+.contentCard h6{
   font-size: 14px;
   margin-bottom: 10px;
   }
 
-.card p{
-font-size: 12px;
-margin-bottom: 5px;
+.contentCard p{
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 
-.card span{
+.contentCard span{
   font-size: 16px;
   margin-bottom: 10px;
   }
 
-.card button{
+  @media screen and (max-width: 425px) {
+    .card div{
+      width: 425px;
+      flex-direction:row;
+      padding: 0 7.5px;
+      padding-bottom: 10px;
+    }
+    .imgCard{
+      width: 100%;
+      min-width: 50%;
+      margin-right: 5px;
+    }
+
+    .contentCard{
+      width: 100%;
+      min-width: 50%;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .contentCard h6{
+      margin-bottom: 5px;
+      width: 100%;
+      }
+    
+    .contentCard p{
+      margin-bottom: 5px;
+      width: 100%;
+    }
+    
+    .contentCard span{
+      margin-bottom: 1px;
+      width: 100%;
+      }
+  }
+
+.contentCard a{
   width: 100%;
-  height: 40px;
-  border-style: none;
-  border-radius:4px ;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
   border: 1px solid #707070;
-  background-color: transparent;
-}
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  }
+  
+.contentCard a:hover{
+  background-color: #707070;
+  color: #fff;
+    
+  }
 
 .container-newsletter{
   width: 100%;
@@ -336,6 +430,16 @@ margin-bottom: 5px;
   border: 1px solid #707070;
 }
 
+@media screen and (max-width: 425px) {
+  .news-form{
+    flex-direction: column;
+  }
+  #news input{
+    width: 95%;
+    height: 30px;
+  }
+}
+
 #news input:focus-within{
 border: none;
 }
@@ -380,6 +484,12 @@ border: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+  .container-footer{
+    text-align: center;
+  }
 }
 
 .container-footer p{
