@@ -45,7 +45,7 @@ async function getMoreProducts () {
 		div.appendChild(buttonProduct)
 
 		
-		productCard.appendChild(div)
+		productCard2.appendChild(div)
 
 	})
 }
