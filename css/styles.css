@@ -25,6 +25,7 @@ a{
   height: 40px;
   cursor: pointer;
   transition: 0.5s;
+  position: relative;
 }
 
 .btn:hover{
@@ -100,6 +101,7 @@ a{
     align-items: center;
     justify-content: center; 
 }
+
 
 .container-about{
     width: 100%;
@@ -178,10 +180,6 @@ a{
 .container-product{
     width: 100%;
     max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .container-product h1{
@@ -225,7 +223,7 @@ a{
 
 .card div{
   width: 22%;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .card div a{
