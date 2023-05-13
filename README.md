@@ -1,4 +1,5 @@
 <h1>Site Teste para Agência Bold</h1>
+<p>O projeto foi desenvolvido da forma mais crua possível. Sem uso de bibliotecas ou frameworks</p>
 
 <h3>Como colocar o site para funcionar</h3>
 
