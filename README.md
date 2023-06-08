@@ -1,5 +1,5 @@
 <h1>Site Teste para Agência Bold</h1>
-<h3></h3>Site: https://detarso7.github.io/BOLD_Teste_Avaliacao/
+<h3>Site:</h3> https://detarso7.github.io/BOLD_Teste_Avaliacao/
 
 <p>O projeto foi desenvolvido da forma mais crua possível. Sem uso de bibliotecas ou frameworks</p>
 
